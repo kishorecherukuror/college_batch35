@@ -1,0 +1,21 @@
+
+<table>
+<tr>
+	<th>Name</th>
+	<th>Age</th>
+	<th>Address</th>
+	<th>Actions</th>
+</tr>
+
+<% @students.each do |student|  %>
+<tr>
+<td><%= student.name %></td>
+<td><%= student.age %></td>
+<td><%= student.address %></td>
+<td><%= link_to "show",  student_path(student) %>
+	<%= link_to "delete", student_delete_path(student), method: "delete", data: {confirm: "Are you sure?"}  %>
+	<%= link_to "edit",  student_edit_path(student) %></td>
+</tr>
+<% end %>
+</table>
+

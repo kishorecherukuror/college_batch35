@@ -1,0 +1,6 @@
+<%= form_for @student, url: {:action => "update"} do |f| %>
+
+<%= render "form", f: f %>
+
+<p><%= f.submit %></p>
+<% end %>
