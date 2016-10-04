@@ -5,7 +5,7 @@ class CreateTeachers < ActiveRecord::Migration
       t.integer :age
       t.text :address
       t.string :email
-
+    
       t.timestamps null: false
     end
   end
